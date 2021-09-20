@@ -18,7 +18,7 @@ def buildOneFile(item):
       "-frtti",
       "-DHAVE_RAPIDJSON",
       "-O3",
-      "-sDISABLE_EXCEPTION_CATCHING=0",
+      "-fexceptions",
       # "-g3",
       # "-gsource-map",
       # "--source-map-base=http://localhost:8080",

@@ -63,7 +63,7 @@ def buildObjectFiles(file):
     # "-g3",
     # "-gsource-map",
     # "--source-map-base=http://localhost:8080",
-    "-sDISABLE_EXCEPTION_CATCHING=0",
+    "-fexceptions",
     "-pthread",
     # "-sPTHREAD_POOL_SIZE='navigator.hardwareConcurrency'",
     "-flto",
