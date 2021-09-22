@@ -72,11 +72,9 @@ jobs:
       #     cd ..
 
       - name: Push to Docker Hub
-        if: ${{ github.event.inputs.release == 'yes' }}
         run: |
-          docker push ${{ secrets.DOCKER_IMAGE_NAME }}
-          docker tag ${{ secrets.DOCKER_IMAGE_NAME }} ${{ secrets.DOCKER_IMAGE_NAME }}:${{ steps.version.outputs.version }}
-          docker push ${{ secrets.DOCKER_IMAGE_NAME }}:${{ steps.version.outputs.version }}
+          docker tag ${{ secrets.DOCKER_IMAGE_NAME }} ${{ secrets.DOCKER_IMAGE_NAME }}:emscripten-issue
+          docker push ${{ secrets.DOCKER_IMAGE_NAME }}:emscripten-issue
 
       - name: Git and NPM config
         run: |
