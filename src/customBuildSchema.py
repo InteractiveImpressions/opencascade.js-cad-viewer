@@ -24,7 +24,8 @@
           "type": "string",
         },
         "default": [
-          "-O3",
+          "-Os",
+          "-sINLINING_LIMIT=1",
           "-sEXPORT_ES6=1",
           "-sUSE_ES6_IMPORT_META=0",
           "-sEXPORTED_RUNTIME_METHODS=['FS']",
@@ -69,7 +70,8 @@
           "type": "string",
         },
         "default": [
-          "-O3",
+          "-Os",
+          "-sINLINING_LIMIT=1",
           "-sEXPORT_ES6=1",
           "-sUSE_ES6_IMPORT_META=0",
           "-sEXPORTED_RUNTIME_METHODS=['FS']",

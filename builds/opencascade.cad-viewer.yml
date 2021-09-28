@@ -63,7 +63,8 @@ mainBuild:
   emccFlags:
     - -DHAVE_RAPIDJSON=1
     - -DOCCT_NO_PLUGINS
-    - -O3
+    - -Os
+    - -sINLINING_LIMIT=1
     - -flto
     - -sEXPORT_ES6=1
     - -sUSE_ES6_IMPORT_META=1
